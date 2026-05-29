@@ -30,7 +30,7 @@ using Microsoft.AzureResilienceManagement;
 @@clientName(ValidateForExecutionRequest, "ValidateForExecutionContent", "csharp");
 
 // CSharp: AZC0030 — *Response -> *Result
-@@clientName(ArmResponseErrorResponse, "ArmResponseErrorResult", "csharp");
+// @@clientName(ArmResponseErrorResponse, "ArmResponseErrorResult", "csharp");
 @@clientName(RecoveryPlanActionBaseResponse, "RecoveryPlanActionBaseResult", "csharp");
 @@clientName(ValidateForRecoveryOperationBaseResponse, "ValidateForRecoveryOperationBaseResult", "csharp");
 @@clientName(UpdateRecoveryResourcesResponse, "UpdateRecoveryResourcesResult", "csharp");
