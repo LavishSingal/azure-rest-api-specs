@@ -11,3 +11,30 @@ using Microsoft.AzureResilienceManagement;
 @@clientName(DrillResource, "DrillTarget", "csharp");
 @@clientName(DrillRunResource, "DrillRunTarget", "csharp");
 @@clientName(RecoveryJobResource, "RecoveryJobTarget", "csharp");
+
+// CSharp: AZC0030 — *Request -> *Content
+@@clientName(DrillRunFailoverRequest, "DrillRunFailoverContent", "csharp");
+@@clientName(DrillEndRequest, "DrillEndContent", "csharp");
+@@clientName(FailoverRequest, "ResilienceManagementFailoverContent", "csharp");
+@@clientName(AddOrUpdateResourcesRequest, "AddOrUpdateResourcesContent", "csharp");
+@@clientName(DrillStartRequest, "DrillStartContent", "csharp");
+@@clientName(DrillRunAddNotesRequest, "DrillRunAddNotesContent", "csharp");
+@@clientName(RecommendCapacityRequest, "RecommendCapacityContent", "csharp");
+@@clientName(RecoveryActionRequest, "RecoveryActionContent", "csharp");
+@@clientName(TestFailoverCleanupRequest, "TestFailoverCleanupContent", "csharp");
+@@clientName(ReprotectRequest, "ReprotectContent", "csharp");
+@@clientName(ValidateForOperationRequest, "ValidateForOperationContent", "csharp");
+@@clientName(UpdateGoalResourceRequest, "UpdateGoalResourceContent", "csharp");
+@@clientName(MarkAsCompleteRequest, "MarkAsCompleteContent", "csharp");
+@@clientName(UpdateRecoveryResourcesRequest, "UpdateRecoveryResourcesContent", "csharp");
+@@clientName(ValidateForExecutionRequest, "ValidateForExecutionContent", "csharp");
+
+// CSharp: AZC0030 — *Response -> *Result
+@@clientName(ArmResponseErrorResponse, "ArmResponseErrorResult", "csharp");
+@@clientName(RecoveryPlanActionBaseResponse, "RecoveryPlanActionBaseResult", "csharp");
+@@clientName(ValidateForRecoveryOperationBaseResponse, "ValidateForRecoveryOperationBaseResult", "csharp");
+@@clientName(UpdateRecoveryResourcesResponse, "UpdateRecoveryResourcesResult", "csharp");
+
+// CSharp: AZC0032 — *Data is reserved (collides with auto-generated *Data POCOs)
+@@clientName(GoalsData, "GoalsInfo", "csharp");
+@@clientName(RecommendationsHighAvailabilityData, "HighAvailabilityRecommendationsInfo", "csharp");
