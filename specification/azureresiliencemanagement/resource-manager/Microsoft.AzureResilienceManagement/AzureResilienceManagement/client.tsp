@@ -30,7 +30,7 @@ using Microsoft.AzureResilienceManagement;
 @@clientName(ValidateForExecutionRequest, "ValidateForExecutionContent", "csharp");
 
 // CSharp: AZC0030 — *Response -> *Result
-// @@clientName(ArmResponseErrorResponse, "ArmResponseErrorResult", "csharp");
+// @@clientName(ArmResponse<ErrorResponse>, "ArmResponseErrorResult", "csharp");
 @@clientName(RecoveryPlanActionBaseResponse, "RecoveryPlanActionBaseResult", "csharp");
 @@clientName(ValidateForRecoveryOperationBaseResponse, "ValidateForRecoveryOperationBaseResult", "csharp");
 @@clientName(UpdateRecoveryResourcesResponse, "UpdateRecoveryResourcesResult", "csharp");
@@ -38,3 +38,9 @@ using Microsoft.AzureResilienceManagement;
 // CSharp: AZC0032 — *Data is reserved (collides with auto-generated *Data POCOs)
 @@clientName(GoalsData, "GoalsInfo", "csharp");
 @@clientName(RecommendationsHighAvailabilityData, "HighAvailabilityRecommendationsInfo", "csharp");
+
+// CSharp: InheritanceCheck — *Resource suffix is reserved for ARM tracked/proxy resources.
+// These three are reference/content models and must not use the *Resource suffix.
+@@clientName(IncludeOrUpdateResource, "IncludeOrUpdateContent", "csharp");
+@@clientName(MoboBrokerResource, "MoboBrokerTarget", "csharp");
+@@clientName(ServiceLevelResource, "ServiceLevelTarget", "csharp");
