@@ -33,7 +33,8 @@ using Microsoft.AzureResilienceManagement;
 @@clientName(DrillRunTestFailoverRequest, "DrillRunTestFailoverContent", "csharp");
 
 // CSharp: AZC0030 — *Response -> *Result
-// @@clientName(ArmResponse<ErrorResponse>, "ArmResponseErrorResult", "csharp");
+// ArmResponse<ErrorResponse> -> ArmResponseErrorResponse cannot be renamed via @@clientName
+// (TypeSpec error: "Cannot reference template instances"). Suppressed via NoWarn in csproj.
 @@clientName(RecoveryPlanActionBaseResponse, "RecoveryPlanActionBaseResult", "csharp");
 @@clientName(ValidateForRecoveryOperationBaseResponse, "ValidateForRecoveryOperationBaseResult", "csharp");
 @@clientName(UpdateRecoveryResourcesResponse, "UpdateRecoveryResourcesResult", "csharp");
